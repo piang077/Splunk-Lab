@@ -1,60 +1,78 @@
-Splunk SOC Lab – Hungry Hustle
+# Splunk SOC Lab – Hungry Hustle
+# Overview
 
-This lab demonstrates practical use of Splunk for security monitoring, log analysis, and incident response. The goal was to investigate network activity, identify security incidents, and implement strategic security planning using the “hungryhustle” dataset.
+This lab simulates a security operations centre (SOC) investigation for a fictional company, Hungry Hustle. The objective is to analyse web traffic, employee activity, and network logs to detect suspicious behaviour, investigate potential security incidents, and implement strategic security measures. All analysis follows standard SOC procedures and best practices, ensuring findings are well-documented and structured.
 
-Lab Activities
-1. Log Analysis and Questions
+The lab focuses on:
 
-Top 10 IPs for unauthorized access: Queried index="hungryhustle" and filtered for 403 Forbidden responses to identify frequent unauthorized attempts.
+-**Identifying unauthorized access attempts to the company website**
 
-Country analysis: Used iplocation clientip to identify countries with the most unauthorized access.
+-**Analysing employee actions and data transfers**
 
-Account monitoring: Investigated Sam Muller’s machine and discovered a private key (empe.ppk) leaked to another user.
+-**Investigating website vulnerabilities and downtime**
 
-Email and file analysis: Found evidence of sensitive file transfers (e.g., payslips and recipe files) and potential insider misuse.
+-**Applying strategic security planning and threat intelligence**
 
-Vulnerability detection: Identified a Cross-Site Scripting (XSS) vulnerability on the website.
+-**Developing a dashboard for monitoring security events**
 
-Bandwidth & performance: Analysed Rick’s workstation to see high YouTube bandwidth consumption affecting performance.
+# Investigation Tasks
 
-Website downtime & maintenance: Calculated downtime and verified causes using HTTP status codes.
+**Unauthorized Access Analysis**
+-Analysed HTTP GET requests and 403 Forbidden responses to identify the top 10 IP addresses responsible for unauthorized access.
 
-Customer activity: Determined the most visited food items using log extraction and statistics.
+Geolocation Analysis
+Used IP addresses to determine which countries had the most unauthorized access attempts.
 
-2. Strategic Security Planning
+Account Monitoring
+Investigated Sam Muller’s account for leaks. Discovered a private key file (empe.ppk) sent externally.
 
-Developed an Incident Response Plan (IRP) for Hungry Hustle:
+Email and File Transfers
+Identified suspicious file transfers, including sensitive documents sent to unintended recipients.
+
+Vulnerability Detection
+Detected a Cross-Site Scripting (XSS) vulnerability on the website that allowed external data exfiltration.
+
+Bandwidth and Performance Analysis
+Examined Rick’s workstation activity and identified high non-work-related bandwidth usage affecting performance.
+
+Website Downtime and Maintenance
+Calculated downtime and determined causes using HTTP status codes (503 Service Unavailable).
+
+Customer Activity
+Analysed product search logs to determine the most frequently visited food items.
+
+Strategic Security Planning
+
+Developed an Incident Response Plan (IRP) for Hungry Hustle covering:
 
 Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned
 
-Defined immediate and long-term actions to contain breaches, improve web application security, and implement threat monitoring.
+Recommended immediate and long-term actions for:
 
-3. Threat Intelligence
+Containing breaches and data leaks
 
-Collected and analysed internal logs and external threat feeds.
+Improving web application security
 
-Developed rules and processes to detect attack patterns such as SQL injection, XSS, and credential stuffing.
+Implementing monitoring, alerting, and threat intelligence
 
-Recommendations include continuous threat hunting, OSINT monitoring, and machine learning-based threat detection.
+Dashboard Overview
 
-4. Dashboard Development
+The lab includes a Splunk dashboard providing real-time security monitoring:
 
-Created a Splunk dashboard with four panels:
+Top 10 IPs generating 403 Forbidden errors
 
-Top 10 IPs generating 403 errors
+Countries with the most unauthorized access attempts
 
-Countries with most unauthorized attempts
+Website downtime incidents
 
-Web downtime events
+Employee bandwidth consumption
 
-Rick’s top bandwidth usage
-
-Dashboard enables real-time threat monitoring, incident response, and strategic decision-making.
+The dashboard supports proactive threat detection, incident response, and data-driven decision-making.
 
 Outcome
 
-Demonstrated hands-on capability in Splunk for SOC operations.
+Applied hands-on Splunk skills for SOC operations
 
-Successfully analysed network traffic, user activity, vulnerabilities, and security incidents.
+Investigated unauthorized access, data leaks, and website vulnerabilities
 
-Applied knowledge in incident response, threat intelligence, and security dashboards for actionable insights.
+Developed structured documentation and dashboards suitable for professional reporting

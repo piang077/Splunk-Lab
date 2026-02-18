@@ -5,23 +5,23 @@ This lab simulates a security operations centre (SOC) investigation for a fictio
 
 **The lab focuses on:**
 
-Identifying unauthorized access attempts to the company website
+- Identifying unauthorised access attempts to the company website
 
-Analysing employee actions and data transfers
+- Analysing employee actions and data transfers
 
-Investigating website vulnerabilities and downtime
+- Investigating website vulnerabilities and downtime
 
-Applying strategic security planning and threat intelligence
+- Applying strategic security planning and threat intelligence
 
-Developing a dashboard for monitoring security events
+- Developing a dashboard for monitoring security events
 
 # Investigation Tasks
 
-**Unauthorized Access Analysis**
-: Analysed HTTP GET requests and 403 Forbidden responses to identify the top 10 IP addresses responsible for unauthorized access.
+**Unauthorised Access Analysis**
+: Analysed HTTP GET requests and 403 Forbidden responses to identify the top 10 IP addresses responsible for unauthorised access.
 
 **Geolocation Analysis**
-: Used IP addresses to determine which countries had the most unauthorized access attempts.
+: Used IP addresses to determine which countries had the most unauthorised access attempts.
 
 **Account Monitoring**
 : Investigated Sam Muller’s account for leaks. Discovered a private key file (empe.ppk) sent externally.

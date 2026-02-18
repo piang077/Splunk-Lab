@@ -47,7 +47,7 @@ The lab focuses on:
 
 - Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned
 
-- Recommended immediate and long-term actions for:
+**Recommended immediate and long-term actions for:**
 
 - Containing breaches and data leaks
 

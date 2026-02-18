@@ -1,4 +1,4 @@
-# Splunk SOC Lab – Hungry Hustle
+# Splunk SOC Lab 
 # Overview
 
 This lab simulates a security operations centre (SOC) investigation for a fictional company, Hungry Hustle. The objective is to analyse web traffic, employee activity, and network logs to detect suspicious behaviour, investigate potential security incidents, and implement strategic security measures. All analysis follows standard SOC procedures and best practices, ensuring findings are well-documented and structured.

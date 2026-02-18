@@ -69,7 +69,7 @@ The lab includes a Splunk dashboard providing real-time security monitoring:
 
 The dashboard supports proactive threat detection, incident response, and data-driven decision-making.
 
-**[Full Lab Report](Splunk-For-Security-Monitoring.pdf)** – Detailed investigation, methodology, and supporting screenshots
+# [Full Lab Report](Splunk-For-Security-Monitoring.pdf) – Detailed investigation, methodology, and supporting screenshots
 
 # Outcome
 
